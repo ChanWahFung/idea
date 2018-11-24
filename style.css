@@ -74,7 +74,7 @@ header .container .line-h{
 }
 /*------banner-------*/
 .cover{
-	background: url(../img/header-bg.jpg) no-repeat;
+	background: url(header-bg.jpg) no-repeat;
 	background-size: cover;
 }
 .card{
@@ -176,19 +176,19 @@ header .container .line-h{
 	100%{transform: translate(0px);}
 }
 .service-item:nth-of-type(1) .service-icon i{
-	background: url(../img/service-2.png) no-repeat;
+	background: url(service-2.png) no-repeat;
 	background-size: cover;
 }
 .service-item:nth-of-type(2) .service-icon i{
-	background: url(../img/service-1.png) no-repeat;
+	background: url(service-1.png) no-repeat;
 	background-size: cover;
 }
 .service-item:nth-of-type(3) .service-icon i{
-	background: url(../img/service-3.png) no-repeat;
+	background: url(service-3.png) no-repeat;
 	background-size: cover;
 }
 .service-item:nth-of-type(4) .service-icon i{
-	background: url(../img/service-4.png) no-repeat;
+	background: url(service-4.png) no-repeat;
 	background-size: cover;
 }
 /*-------创意展示----------*/
@@ -351,7 +351,7 @@ header .container .line-h{
 }
 /*----联系我们-----*/
 .contact{
-	background: url(../img/footer-bg.jpg) no-repeat fixed;
+	background: url(footer-bg.jpg) no-repeat fixed;
 	background-size: cover;
 }
 .contact-bg{
