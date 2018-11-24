@@ -1,0 +1,421 @@
+header .navbar-default{
+	padding: 10px 0;
+}
+header .container a{
+	text-decoration: none;
+	color: #171A1D;
+	font-size: 16px;
+	line-height: 30px;
+	display: inline-block;
+}
+header .container a span{
+	vertical-align: middle;
+	font-size:20px;
+	font-weight: 600;
+	font-family: "微软雅黑";
+	color: #171A1D;
+	letter-spacing: 5px;
+}
+header .container img{
+	width: 28px;
+	height: 28px;
+}
+header .container>div{
+	float: right;
+}
+header .container button{
+	background: none;
+	border: none;
+	outline: none;
+	display: block;
+	padding: 3px;
+	border-radius: 5px;
+	transition: all .1s;
+}
+header .container button:hover{
+	background: #E3E3E3;
+}
+header .container .line-h{
+	width: 25px;
+	height: 3px;
+	background: #171A1D;
+	display: block;
+	margin: 5px 5px;
+}
+.link-box{
+	width: 100%;
+	height: 0px;
+	background: #ffffff;
+	transition:all .3s;
+	overflow: hidden;
+}
+.link{
+	float: right;
+	margin-right: 80px;
+}
+.link a{
+	margin: 0 12px;
+	line-height: 50px;
+	color: #424242;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: right;
+}
+.link a:hover{
+	color:lightsalmon;
+}
+@media(max-width:768px ){
+	.link{
+		margin: 0;
+	}
+	.link a{
+		font-size: 10px;
+	}
+}
+/*------banner-------*/
+.cover{
+	background: url(../img/header-bg.jpg) no-repeat;
+	background-size: cover;
+}
+.card{
+	width: 360px;
+	height: 490px;
+	background: #fff;
+	padding: 70px 60px;
+	margin: 300px auto;
+	cursor: pointer;
+}
+.card p{
+	text-align: center;
+	font-size: 70px;
+	font-weight: 700;
+	color: #171A1D;
+	border: 3px solid #171A1D;
+	margin: 0;
+	line-height: 114px;
+}
+.card p:hover{
+	animation-name: covermove;
+	animation-iteration-count: 1;
+	animation-duration: .8s;
+	animation-timing-function: ease-in-out;
+}
+@keyframes covermove{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.05);}
+	100%{transform: scale(1);}
+}
+@media(max-width: 768px) {
+.card{
+	width: 220px;
+	height: 340px;
+	background: #fff;
+	padding: 40px 40px;
+	margin: 50px auto;
+}
+.card p {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 86px;
+}
+}
+/*-------服务介绍----------*/
+.services{
+	padding: 100px 0;
+}
+.service-item{
+	padding: 35px;
+	line-height: 24px;
+	transition: all .3s;
+	cursor: pointer
+}
+.service-item:hover{
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,.5);
+}
+.title{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.title h4{
+	padding-bottom: 10px;
+	font-size:22px ;
+	letter-spacing:3px;
+	font-weight: bold;
+	display: inline;
+	border-bottom: 3px solid orange;
+}
+.services .row h4{
+	text-align: center;
+	padding: 15px 0;
+}
+.services .row p{
+	
+	text-align: center;
+	padding: 10px 8px;
+}
+.service-icon i{
+	width: 56px;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+	transition: all .5s;
+}
+.service-item:hover .service-icon i{
+	animation-name: mymove;
+	animation-duration: 1.2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes mymove{
+	0%{transform: translate(0px);}
+	16.66%{transform: translate(-10px);}
+	33.32%{transform: translate(8px);}
+	49.98%{transform: translate(-6px);}
+	66.64%{transform: translate(4px);}
+	83.30%{transform: translate(-2px);}
+	100%{transform: translate(0px);}
+}
+.service-item:nth-of-type(1) .service-icon i{
+	background: url(../img/service-2.png) no-repeat;
+	background-size: cover;
+}
+.service-item:nth-of-type(2) .service-icon i{
+	background: url(../img/service-1.png) no-repeat;
+	background-size: cover;
+}
+.service-item:nth-of-type(3) .service-icon i{
+	background: url(../img/service-3.png) no-repeat;
+	background-size: cover;
+}
+.service-item:nth-of-type(4) .service-icon i{
+	background: url(../img/service-4.png) no-repeat;
+	background-size: cover;
+}
+/*-------创意展示----------*/
+.shopShow{
+	padding-bottom: 100px;
+}
+.shopShow .row .shopcard{
+	margin: 5px 0;
+}
+.shopShow .row a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+@media (max-width:768px ) {
+.shopShow .row a{
+	width:100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+}
+.shopShow .row img{
+	width: 100%;
+	transition: all .5s;
+}
+.shopShow .row a:hover img{
+	transform: scale(1.3);
+}
+.shopShow .row .shopInfo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 6%;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+	transition: all .3s;
+}
+.shopShow .row a:hover .shopInfo{
+	opacity: 1;
+}
+.shopShow .row .shopInfo p{
+	height: 100%;
+	padding: 20px;
+	font-size: 20px;
+	color: #e3e3e3;
+	background: rgba(0,0,0,.3);
+	position: relative;
+	transform: scale(1.2);
+	opacity: 0;
+	transition: all .5s;
+}
+.shopShow .row a:hover p{
+	transform: scale(1);
+	opacity: 1;
+}
+.shopShow .row .shopInfo span{
+	font-size: 18px;
+	display: block;
+	text-align: right;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/*-----关于我们-------*/
+.about{
+	padding-bottom: 100px;
+}
+.about .about-card{
+	margin-top: 100px;
+}
+.about .about-card .about-l{
+	margin-left: 10%;
+}
+.about .about-card .about-l h3{
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0;
+}
+.about .about-card .about-l h4{
+	font-size: 26px;
+}
+.about .about-card .about-l p{
+	margin: 0;
+}
+.about .about-card .about-r{
+	margin-right: 10%;
+}
+@media(max-width:768px ) {
+.about .about-card{
+	margin-top: 50px;
+	text-align: center;
+}
+.about .about-card .about-l,
+.about .about-card .about-r{
+	margin: 0;
+}
+}
+.person{
+	width: 870px;
+	margin:100px auto 0 auto;
+	padding-bottom: 30px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.person-box{
+	padding: 0;
+	width: 4350px;
+	transition: all .5s;
+}
+.person li{
+	width: 870px;
+	float: left;
+	display: inline-block;
+}
+.person li p{
+	font-size: 17px;
+	max-width: 650px;
+	margin: 20px auto;
+	color: #2f2e2e;
+}
+.person li img{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+@media(max-width:768px ) {
+.person{
+	width: 340px;
+}
+.person-box{
+	width: ;1700px;
+}
+.person li{
+	width: 340px;
+}
+}
+.person .dot{
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.person .dot i{
+	display: inline-block;
+	margin: 0 8px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #666;
+	cursor: pointer;
+}
+.person .dot .active{
+	background: #FFFFFF;
+	border: 2px solid #000000;
+}
+/*----联系我们-----*/
+.contact{
+	background: url(../img/footer-bg.jpg) no-repeat fixed;
+	background-size: cover;
+}
+.contact-bg{
+	min-height: 300px;
+	background-color: rgba(47,46,46,0.7);
+	padding: 100px 0;
+}
+.contact .img img{
+	width: 150px;
+	cursor: pointer;
+}
+.contact .img img:hover{
+	animation-name:move;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(0.63, -0.01, 0.37, 1.01);
+}
+@keyframes move{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+.contact .ewm{
+	margin-top: 100px;
+}
+.contact .ewm img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.contact .ewm p{
+	color: #E3E3E3;
+}
+/*----底部版权----*/
+footer{
+	width: 100%;
+	background-color: #2f2e2e !important;
+    color: #999;
+    padding: 30px 0;
+}
+footer p{
+	margin: 0;
+}
+/*--返回顶部--*/
+.gotop{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #666666;
+	opacity: .5;
+	position: fixed;
+	right: 1%;
+	bottom: 1%;
+	padding: 15px;
+	cursor: pointer;
+	/*display: none;*/
+}
+.gotop img{
+	width: 100%;
+	height: 100%;
+}
+@media(max-width:768px ){
+	.gotop{
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+	}
+}
